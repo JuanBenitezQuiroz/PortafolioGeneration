@@ -245,6 +245,34 @@ ul {
     display: block;
 }
 
+/* Added language toggle button styles */
+.lang-toggle {
+    background: none;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    padding: 0.5rem 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: var(--transition);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+}
+
+.lang-toggle:hover {
+    background-color: var(--bg-secondary);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.lang-text {
+    min-width: 1.5rem;
+    text-align: center;
+}
+
 /* Mobile Menu Toggle */
 .nav__toggle {
     display: none;

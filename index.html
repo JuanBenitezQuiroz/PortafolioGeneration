@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hackerman - Full Stack Developer Portfolio">
-    <title>Hackerman | Full Stack Developer</title>
+    <meta name="description" content="Juan Manuel Benitez - Full Stack Developer Portfolio">
+    <title>Juan Manuel Benitez | Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,26 +14,29 @@
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Aubenroz</a> 
-            <!-- Arriba decia Hackerman-->
+            <a href="#" class="nav__logo">Juan Manuel Benitez</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="#home" class="nav__link active-link" data-i18n="nav.home">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#about" class="nav__link" data-i18n="nav.about">Sobre</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a>
+                        <a href="#skills" class="nav__link" data-i18n="nav.skills">Habilidades</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a>
+                        <a href="#projects" class="nav__link" data-i18n="nav.projects">Proyectos</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link" data-i18n="nav.contact">Contacto</a>
                     </li>
                 </ul>
+                <!-- Added language toggle button -->
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -64,14 +67,15 @@
         <section class="hero section" id="home">
             <div class="hero__container container">
                 <div class="hero__content">
-                    <span class="hero__greeting">Hi, I'm</span>
+                    <!-- Added data-i18n attributes for translation -->
+                    <span class="hero__greeting" data-i18n="hero.greeting">Hola, Yo soy</span>
                     <h1 class="hero__title">Juan Manuel Benítez</h1>
-                    <p class="hero__description">
+                    <p class="hero__description" data-i18n="hero.description">
                         Full Stack Developer focused on clean code, intuitive interfaces and scalable backend architectures.
                     </p>
                     <div class="hero__buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero.contact">Mantengámonos en Contacto</a>
+                        <a href="#projects" class="btn btn-secondary" data-i18n="hero.projects">Mira mis proyectos</a>
                     </div>
                 </div>
                 <div class="hero__image">
@@ -80,7 +84,7 @@
             </div>
             <div class="hero__scroll">
                 <a href="#about" class="scroll-down">
-                    <span>Scroll Down</span>
+                    <span data-i18n="hero.scroll">Scroll Down</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
@@ -92,31 +96,29 @@
         <section class="about section" id="about">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">My Introduction</span>
+                    <h2 class="section__title" data-i18n="about.title">Sobre mí</h2>
+                    <span class="section__subtitle" data-i18n="about.subtitle">Mi Introducción</span>
                 </div>
                 <div class="about__container">
                     <div class="about__content">
-                        <p class="about__description">
-                            I'm a passionate Full Stack Developer with expertise in building modern web applications. 
-                            I specialize in creating seamless user experiences while maintaining robust and scalable backend systems.
+                        <p class="about__description" data-i18n="about.description1">
+                            Soy un desarrollador Full Stack apasionado, con experiencia en la creación de aplicaciones web modernas. Me especializo en ofrecer experiencias de usuario fluidas, manteniendo al mismo tiempo sistemas backend robustos y escalables.
                         </p>
-                        <p class="about__description">
-                            With a keen eye for design and a deep understanding of software architecture, I transform ideas 
-                            into production-ready applications that make a difference.
+                        <p class="about__description" data-i18n="about.description2">
+                            Con un buen ojo para el diseño y un profundo entendimiento de la arquitectura de software, transformo ideas en aplicaciones listas para producción que marcan la diferencia.
                         </p>
                         <div class="about__info">
                             <div class="about__box">
                                 <h3 class="about__box-title">5+</h3>
-                                <span class="about__box-subtitle">Years Experience</span>
+                                <span class="about__box-subtitle" data-i18n="about.experience">Años Experiencia</span>
                             </div>
                             <div class="about__box">
                                 <h3 class="about__box-title">50+</h3>
-                                <span class="about__box-subtitle">Projects Completed</span>
+                                <span class="about__box-subtitle" data-i18n="about.projects">Proyectos Completados</span>
                             </div>
                             <div class="about__box">
                                 <h3 class="about__box-title">30+</h3>
-                                <span class="about__box-subtitle">Happy Clients</span>
+                                <span class="about__box-subtitle" data-i18n="about.clients">Clientes Satisfechos</span>
                             </div>
                         </div>
                     </div>
@@ -128,8 +130,8 @@
         <section class="skills section" id="skills">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Skills</h2>
-                    <span class="section__subtitle">My Technical Expertise</span>
+                    <h2 class="section__title" data-i18n="skills.title">Habilidades</h2>
+                    <span class="section__subtitle" data-i18n="skills.subtitle">Mis Experiencias Técnicas</span>
                 </div>
                 <div class="skills__container">
                     <div class="skills__card">
@@ -207,21 +209,21 @@
         <section class="projects section" id="projects">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Projects</h2>
-                    <span class="section__subtitle">Recent Work</span>
+                    <h2 class="section__title" data-i18n="projects.title">Proyectos</h2>
+                    <span class="section__subtitle" data-i18n="projects.subtitle">Trabajos Recientes</span>
                 </div>
                 <div class="projects__container">
                     <article class="project__card">
                         <div class="project__image">
                             <img src="/placeholder.svg?height=300&width=400" alt="E-Commerce Platform">
                             <div class="project__overlay">
-                                <a href="#" class="project__link">View Project →</a>
+                                <a href="#" class="project__link" data-i18n="projects.viewProject">Ver Proyecto →</a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">E-Commerce Platform</h3>
-                            <p class="project__description">
-                                A full-featured e-commerce platform with payment integration, inventory management, and real-time analytics.
+                            <h3 class="project__title" data-i18n="projects.project1.title">Plataforma de E-Commerce</h3>
+                            <p class="project__description" data-i18n="projects.project1.description">
+                                Una plataforma de comercio electrónico totalmente equipada, con integración de pagos, gestión de inventario y analíticas en tiempo real.
                             </p>
                             <div class="project__tech">
                                 <span class="tech-tag">React</span>
@@ -236,13 +238,13 @@
                         <div class="project__image">
                             <img src="/placeholder.svg?height=300&width=400" alt="Task Management App">
                             <div class="project__overlay">
-                                <a href="#" class="project__link">View Project →</a>
+                                <a href="#" class="project__link" data-i18n="projects.viewProject">Ver Proyecto →</a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">Task Management System</h3>
-                            <p class="project__description">
-                                Collaborative task management tool with real-time updates, team collaboration, and advanced filtering.
+                            <h3 class="project__title" data-i18n="projects.project2.title">Sistema de Gestión de Tareas</h3>
+                            <p class="project__description" data-i18n="projects.project2.description">
+                                Herramienta colaborativa de gestión de tareas con actualizaciones en tiempo real, colaboración en equipo y filtrado avanzado.
                             </p>
                             <div class="project__tech">
                                 <span class="tech-tag">Next.js</span>
@@ -257,13 +259,13 @@
                         <div class="project__image">
                             <img src="/placeholder.svg?height=300&width=400" alt="Social Media Platform">
                             <div class="project__overlay">
-                                <a href="#" class="project__link">View Project →</a>
+                                <a href="#" class="project__link" data-i18n="projects.viewProject">Ver Proyecto →</a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">Social Media Platform</h3>
-                            <p class="project__description">
-                                A modern social platform featuring posts, stories, messaging, and content recommendation algorithms.
+                            <h3 class="project__title" data-i18n="projects.project3.title">Plataforma de Social Media</h3>
+                            <p class="project__description" data-i18n="projects.project3.description">
+                                Una plataforma social moderna que incluye publicaciones, historias, mensajería y algoritmos de recomendación de contenido.
                             </p>
                             <div class="project__tech">
                                 <span class="tech-tag">React</span>
@@ -281,8 +283,8 @@
         <section class="contact section" id="contact">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Contact Me</h2>
-                    <span class="section__subtitle">Get In Touch</span>
+                    <h2 class="section__title" data-i18n="contact.title">Contáctame</h2>
+                    <span class="section__subtitle" data-i18n="contact.subtitle">Mantengámonos en Contacto</span>
                 </div>
                 <div class="contact__container">
                     <div class="contact__info">
@@ -292,39 +294,39 @@
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                             <h3>Email</h3>
-                            <span>hackerman@example.com</span>
+                            <span>juanmanuel.benitez@genstudents.org</span>
                         </div>
                         <div class="contact__card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <h3>Location</h3>
-                            <span>San Francisco, CA</span>
+                            <h3 data-i18n="contact.location">Ubicación</h3>
+                            <span>Rancagua, Región de O'Higgins</span>
                         </div>
                         <div class="contact__card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
-                            <h3>Phone</h3>
-                            <span>+1 (555) 123-4567</span>
+                            <h3 data-i18n="contact.phone">Teléfono</h3>
+                            <span>+56 (9) 66666666</span>
                         </div>
                     </div>
                     <form class="contact__form" id="contact-form">
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Your Name" required>
+                            <input type="text" class="form__input" data-i18n-placeholder="contact.form.name" placeholder="Tu Nombre" required>
                         </div>
                         <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Your Email" required>
+                            <input type="email" class="form__input" data-i18n-placeholder="contact.form.email" placeholder="Tú Correo" required>
                         </div>
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Subject" required>
+                            <input type="text" class="form__input" data-i18n-placeholder="contact.form.subject" placeholder="Sujeto" required>
                         </div>
                         <div class="form__group">
-                            <textarea class="form__input form__textarea" placeholder="Your Message" rows="6" required></textarea>
+                            <textarea class="form__input form__textarea" data-i18n-placeholder="contact.form.message" placeholder="Tu Mensaje" rows="6" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">
-                            Send Message
+                            <span data-i18n="contact.form.submit">Envía el Mensaje</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="22" y1="2" x2="11" y2="13"></line>
                                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -340,7 +342,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__content">
-                <h3 class="footer__title">Hackerman</h3>
+                <h3 class="footer__title">Juan Manuel Benítez Quiroz</h3>
                 <p class="footer__description">Full Stack Developer</p>
             </div>
             <div class="footer__social">
@@ -362,8 +364,8 @@
                     </svg>
                 </a>
             </div>
-            <p class="footer__copy">
-                &copy; 2025 Hackerman. All rights reserved.
+            <p class="footer__copy" data-i18n="footer.copyright">
+                &copy; 2025 JMBQ. Todos los derechos reservados.
             </p>
         </div>
     </footer>
